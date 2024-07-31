@@ -1,0 +1,32 @@
+{
+  "name": "image_resizer",
+  "productName": "Image Resizer",
+  "version": "1.0.0",
+  "description": "App to resize images",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package": "electron-builder"
+  },
+  "build": {
+    "appId": "com.Prerak.ImageResizer",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icons/win/icon.ico"
+    },
+    "directories": {
+      "buildResources": "build"
+    }
+  },
+  "author": "Prerak Singh Sangwan",
+  "license": "MIT",
+  "dependencies": {
+    "resize-img": "^2.0.0",
+    "toastify-js": "^1.12.0"
+  },
+  "devDependencies": {
+    "electron": "^30.0.2",
+    "electron-builder": "^24.13.3"
+  }
+}
